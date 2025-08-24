@@ -45,3 +45,18 @@
     + http://10.42.0.1/
     + 管理者帳戶: root
     + 預設密碼: heltec.org
+    + 登入之後會有設定，一開始要選國家，就維持預設選擇US。主機名稱也不要改，用預設名稱。到最右下角按下「Apply」。
+    + 接下來要選擇設定精靈，選左邊的「Standard WiFi HaLow」。
+    + 「WiFi HaLow Wizard」頁面選「Access Point」，按下「Next」。
+    + 「Setup HaLow Network - AP」頁面設定維持預設，按下「Next」。
+    + 「Upstream Network」頁面選「Ethernet」與「Router」。
+    + 「2.4 GHz Wi-Fi Access Point」頁面把「Enable Access Point」啟用，其他設定用預設值，按下「Next」。
+    + 「Almost there...」頁面按下「Apply」。
+    + 然後路由器又會重開機，開機完後IP將改變為: 192.168.100.1。
+    + 至此，要重新訪問路由器的網頁將改為: http://10.42.0.1/
+    + 若有需要可以進一步去修改Port Forword等等...
+    + 
+
+
+
+
