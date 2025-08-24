@@ -53,11 +53,21 @@
     + 「2.4 GHz Wi-Fi Access Point」頁面把「Enable Access Point」啟用，其他設定用預設值，按下「Next」。
     + 「Almost there...」頁面按下「Apply」。
     + 然後路由器又會重開機，開機完後IP將改變為: 192.168.100.1。
-    + 至此，要重新訪問路由器的網頁將改為: http://10.42.0.1/
+    + 至此，要重新訪問路由器的網頁將改為: http://192.168.100.1/
     + 若有需要可以進一步去修改Port Forword等等...
     + 這時候，RJ45將是WAN Port，只要連接到上層路由器即可用DHCP取得IP，要綁定IP請從上層路由器設定。
     + 建議有重新設定請使用WIFI。這個裝置沒有要提供RJ45給LAN用。
-   
++ 路由器外盒貼上貼紙:
+  + SSID: HT-H7608-B862
+  + PASS: heltec.org
+  + USERNAME: root
+  + PASSWORD: heltec.org
+  + Mode: Access Point
+  + Network: Ethernet+Router
+  + LAN IP: 192.168.100.1
+  + WAN IP: DHCP
+  + RJ45: WAN
+  + WIFI: ON
 
 ### 初次設定(最上層可上網的RUT200+第二層的WifiHaLow-E972)
 + 準備工具: 有Wifi功能的電腦或筆電進行設定。
