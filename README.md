@@ -31,8 +31,12 @@
 + 在「System > Reset/FlashFirmware」頁面
 
 ### 初次設定(上網用的主機)
++ 準備工具: 有Wifi功能的電腦或筆電進行設定。
 + 參考資料: https://docs.heltec.org/en/wifi_halow/ht-h7608/index.html
 + 上電會亮紅燈，接著閃爍，然後變成黃或綠燈有出現的時候，表示已經開機完成。
-+ 如果已經是在閃爍
++ 如果還沒完成設定，將進入設定模式，閃爍黃燈一次綠燈一次循環。此時可以用Wifi連入，或用LAN連入。
++ 這裡選擇用WIFI進行設定:
+  + 若RJ45維持連線的情況下發生問題，請移除RJ45接線，並將裝置重開機。
+  + 使用筆電的WIFI尋找路由器的SSID: HT-H7608-XXXX
 + 管理者帳戶: root
 + 預設密碼: heltec.org
