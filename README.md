@@ -49,13 +49,14 @@
     + 接下來要選擇設定精靈，選左邊的「Standard WiFi HaLow」。
     + 「WiFi HaLow Wizard」頁面選「Access Point」，按下「Next」。
     + 「Setup HaLow Network - AP」頁面設定維持預設，按下「Next」。
-    + 「Upstream Network」頁面選「Ethernet」與「Router」。
+    + 「Upstream Network」頁面選「Ethernet」與「Router」，按下「Next」。
     + 「2.4 GHz Wi-Fi Access Point」頁面把「Enable Access Point」啟用，其他設定用預設值，按下「Next」。
     + 「Almost there...」頁面按下「Apply」。
-    + 然後路由器又會重開機，開機完後IP將改變為: 192.168.100.1。
+    + 然後路由器又會重開機，開機完後路由器LAN IP將改變為: 192.168.100.1。
     + 至此，要重新訪問路由器的網頁將改為: http://192.168.100.1/
     + 若有需要可以進一步去修改Port Forword等等...
     + 這時候，RJ45將是WAN Port，只要連接到上層路由器即可用DHCP取得IP，要綁定IP請從上層路由器設定。
+    + 這時候，Wifi HaLow是LAN，提供Wifi HaLow Client連入，會配發192.168.100.x的IP，可以設定綁定IP。
     + 建議有重新設定請使用WIFI。這個裝置沒有要提供RJ45給LAN用。
 + 路由器外盒貼上貼紙:
   + SSID: HT-H7608-B862
@@ -69,7 +70,7 @@
   + RJ45: WAN
   + WIFI: ON
 
-### 初次設定(最上層可上網的RUT200+第二層的WifiHaLow-E972)
+### 初次設定(第三層的WifiHaLow-E972+第四層RUT200)
 + 準備工具: 有Wifi功能的電腦或筆電進行設定。
 + 參考資料: https://docs.heltec.org/en/wifi_halow/ht-h7608/index.html
 + 上電會亮紅燈，接著閃爍，然後變成黃或綠燈有出現的時候，表示已經開機完成。
@@ -77,7 +78,7 @@
 + 這裡選擇用WIFI進行設定:
   + 若RJ45維持連線的情況下發生問題，請移除RJ45接線，並將裝置重開機。
   + 使用筆電的WIFI連接WifiHaLow路由器:
-    + SSID: HT-H7608-B862
+    + SSID: HT-H7608-E972
     + PASS: heltec.org
   + 成功連線後應該會配發IP: 10.42.0.x
   + 訪問WifiHaLow路由器設定網頁:
@@ -86,15 +87,30 @@
     + 預設密碼: heltec.org
     + 登入之後會有設定，一開始要選國家，就維持預設選擇US。主機名稱也不要改，用預設名稱。到最右下角按下「Apply」。
     + 接下來要選擇設定精靈，選左邊的「Standard WiFi HaLow」。
-    + 「WiFi HaLow Wizard」頁面選「Access Point」，按下「Next」。
-    + 「Setup HaLow Network - AP」頁面設定維持預設，按下「Next」。
-    + 「Upstream Network」頁面選「Ethernet」與「Router」。
+    + 「WiFi HaLow Wizard」頁面選「Client」，按下「Next」。
+    + 「Connect to a HaLow Network」頁面選「Manual credentials」，設定好目標HaLowAccessPoint的SSID和密碼後，按下「Next」。
+      + SSID: HT-H7608-B862
+      + PASS: heltec.org
+    + 「Traffic Mode」頁面選「Extender」，按下「Next」。
     + 「2.4 GHz Wi-Fi Access Point」頁面把「Enable Access Point」啟用，其他設定用預設值，按下「Next」。
     + 「Almost there...」頁面按下「Apply」。
-    + 然後路由器又會重開機，開機完後IP將改變為: 192.168.100.1。
-    + 至此，要重新訪問路由器的網頁將改為: http://10.42.0.1/
+    + 然後路由器又會重開機，開機完後LAN IP仍為: 10.42.0.1。
+    + 至此，要重新訪問路由器的網頁將為: http://10.42.0.1/
     + 若有需要可以進一步去修改Port Forword等等...
-    + 這時候，RJ45將是WAN Port，只要連接到上層路由器即可用DHCP取得IP，要綁定IP請從上層路由器設定。
-    + 建議有重新設定請使用WIFI。這個裝置沒有要提供RJ45給LAN用。
-
+    + 這時候，RJ45將是LAN Port，路由器為DHCP Server，發配LAN IP=10.42.0.x，可設定綁定IP。
+    + 這時候，Wifi HaLow是WAN，連接到上層路由器即可用DHCP取得IP，要綁定IP請從上層路由器設定。
+    + 建議有重新設定請使用WIFI。這個裝置的RJ45是LAN，留給RUT200的WAN用。
++ 路由器外盒貼上貼紙:
+  + SSID: HT-H7608-E972
+  + PASS: heltec.org
+  + USERNAME: root
+  + PASSWORD: heltec.org
+  + Mode: Client
+  + Traffic Mode: Extender
+  + HaLow Access Point:
+  + HT-H7608-B862
+  + LAN IP: 10.42.0.1
+  + WAN IP: DHCP (HaLow AP)
+  + RJ45: LAN
+  + WIFI: ON
 
