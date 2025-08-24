@@ -30,7 +30,7 @@
 + /cgi-bin/luci/admin/system/flash
 + 在「System > Reset/FlashFirmware」頁面
 
-### 初次設定(上網用的主機)
+### 初次設定(最上層可上網的RUT200+第二層的WifiHaLow-B862)
 + 準備工具: 有Wifi功能的電腦或筆電進行設定。
 + 參考資料: https://docs.heltec.org/en/wifi_halow/ht-h7608/index.html
 + 上電會亮紅燈，接著閃爍，然後變成黃或綠燈有出現的時候，表示已經開機完成。
@@ -38,7 +38,7 @@
 + 這裡選擇用WIFI進行設定:
   + 若RJ45維持連線的情況下發生問題，請移除RJ45接線，並將裝置重開機。
   + 使用筆電的WIFI連接WifiHaLow路由器:
-    + SSID: HT-H7608-XXXX
+    + SSID: HT-H7608-B862
     + PASS: heltec.org
   + 成功連線後應該會配發IP: 10.42.0.x
   + 訪問WifiHaLow路由器設定網頁:
@@ -59,6 +59,32 @@
     + 建議有重新設定請使用WIFI。這個裝置沒有要提供RJ45給LAN用。
    
 
-
+### 初次設定(最上層可上網的RUT200+第二層的WifiHaLow-E972)
++ 準備工具: 有Wifi功能的電腦或筆電進行設定。
++ 參考資料: https://docs.heltec.org/en/wifi_halow/ht-h7608/index.html
++ 上電會亮紅燈，接著閃爍，然後變成黃或綠燈有出現的時候，表示已經開機完成。
++ 如果還沒完成設定，將進入設定模式，閃爍黃燈一次綠燈一次循環。此時可以用Wifi連入，或用LAN連入。
++ 這裡選擇用WIFI進行設定:
+  + 若RJ45維持連線的情況下發生問題，請移除RJ45接線，並將裝置重開機。
+  + 使用筆電的WIFI連接WifiHaLow路由器:
+    + SSID: HT-H7608-B862
+    + PASS: heltec.org
+  + 成功連線後應該會配發IP: 10.42.0.x
+  + 訪問WifiHaLow路由器設定網頁:
+    + http://10.42.0.1/
+    + 管理者帳戶: root
+    + 預設密碼: heltec.org
+    + 登入之後會有設定，一開始要選國家，就維持預設選擇US。主機名稱也不要改，用預設名稱。到最右下角按下「Apply」。
+    + 接下來要選擇設定精靈，選左邊的「Standard WiFi HaLow」。
+    + 「WiFi HaLow Wizard」頁面選「Access Point」，按下「Next」。
+    + 「Setup HaLow Network - AP」頁面設定維持預設，按下「Next」。
+    + 「Upstream Network」頁面選「Ethernet」與「Router」。
+    + 「2.4 GHz Wi-Fi Access Point」頁面把「Enable Access Point」啟用，其他設定用預設值，按下「Next」。
+    + 「Almost there...」頁面按下「Apply」。
+    + 然後路由器又會重開機，開機完後IP將改變為: 192.168.100.1。
+    + 至此，要重新訪問路由器的網頁將改為: http://10.42.0.1/
+    + 若有需要可以進一步去修改Port Forword等等...
+    + 這時候，RJ45將是WAN Port，只要連接到上層路由器即可用DHCP取得IP，要綁定IP請從上層路由器設定。
+    + 建議有重新設定請使用WIFI。這個裝置沒有要提供RJ45給LAN用。
 
 
