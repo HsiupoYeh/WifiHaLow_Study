@@ -130,7 +130,7 @@
   + WIFI: ON
 + DHCP綁定 (Network > DHCP and DNS)
   + 建議先從「Status > Overview」底下的「Active DHCP Leases」查看區域網路發佈IP位置與裝置清單來設定設備。
-  + 把RUT200_CADB設定靜態IP: 10.42.0.22
+  + 把RUT200_CADB設定靜態IP: 10.42.0.22 (這邊綁定不給改HostName，自己看一下MAC來知道是哪個裝置。MAC=20:97:27:1A:CA:DA)
   + 將RUT200_CADB綁好IP後再設定port forwards
 + Port Forwards (Network > Firewall >Port Forwards)
   + E972_HTTP (x.x.x.x:26301->192.168.100.21:80)
