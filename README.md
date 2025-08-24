@@ -128,7 +128,21 @@
   + WAN IP: DHCP (HaLow AP)
   + RJ45: LAN
   + WIFI: ON
-
++ DHCP綁定 (Network > DHCP and DNS)
+  + 建議先從「Status > Overview」底下的「Active DHCP Leases」查看區域網路發佈IP位置與裝置清單來設定設備。
+  + 把RUT200_CADB設定靜態IP: 10.42.0.22
+  + 將RUT200_CADB綁好IP後再設定port forwards
++ Port Forwards (Network > Firewall >Port Forwards)
+  + E972_HTTP (x.x.x.x:26301->192.168.100.21:80)
+    + Name: E972_HTTP
+    + Source zone: lan
+    + External port: 26301
+    + Destination zone: ahwlan
+    + Internal IP address: 192.168.100.21
+    + Internal port: 80
+    + 其他不用改
+   
+      
 ### 第一層路由器設定(暫時用RUT200_C85E)
 + 只要可以上網、提供一個RJ45的LAN給第二層WifiHaLow路由。
 
