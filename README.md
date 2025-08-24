@@ -83,7 +83,14 @@
     + Internal IP address: 192.168.100.21
     + Internal port: 80
     + 其他不用改
-
+  + RUT200_CADB_HTTP (x.x.x.x:26302->192.168.100.21:26302)
+    + Name: RUT200_CADB_HTTP
+    + Source zone: lan
+    + External port: 26302
+    + Destination zone: ahwlan
+    + Internal IP address: 10.42.0.22
+    + Internal port: 26302
+    + 其他不用改
 ### 初次設定(第三層的WifiHaLow-E972+第四層RUT200)
 + 準備工具: 有Wifi功能的電腦或筆電進行設定。
 + 參考資料: https://docs.heltec.org/en/wifi_halow/ht-h7608/index.html
