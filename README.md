@@ -1,1 +1,10 @@
-# WifiHaLow_Study
+# WifiHaLow_研究
++ 作者: HsiupoYeh
++ 更新日期: 2025-08-24
+
+### WifiHaLow (IEEE 802.11ah) 簡介
++ 整個字讀起來像是 **"歪ㄈㄞ、黑漏"** 。
++ IEEE 802.11ah是802.11家族的一項無線網路標準，由IEEE標準協會制定，旨在透過 1Ghz 免授權頻段提供低功耗、長距離的**無線區域網路**（WLAN），Wi-Fi聯盟自2016年定名為WiFi HaLow。
++ 台灣地區免執照頻段: 922-928MHz、920-925MHz。
+  + 註: 使用Lora協定的**Meshtastic**，在台灣預設是使用923.875MHz，目前有人推廣改用920.125MHz。
+  + 註2: **HT-H7608 Wi-Fi HaLow 路由器** 使用的天線支援: 902~928 MHz。
