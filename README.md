@@ -77,9 +77,11 @@
 + Port Forwards (Network > Firewall >Port Forwards)
   + E972_HTTP (x.x.x.x:26301->192.168.100.21:80)
     + Name: E972_HTTP
+    + Source zone: ahwlan
     + External port: 26301
     + Internal IP address: 192.168.100.21
     + Internal port: 80
+    + 其他不用改
 
 ### 初次設定(第三層的WifiHaLow-E972+第四層RUT200)
 + 準備工具: 有Wifi功能的電腦或筆電進行設定。
