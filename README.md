@@ -70,6 +70,10 @@
   + WAN IP: DHCP
   + RJ45: WAN
   + WIFI: ON
++ DHCP綁定 (Network > DHCP and DNS)
+  + 建議先從「Status > Overview」底下的「Active DHCP Leases」查看區域網路發佈IP位置與裝置清單來設定設備。
+  + 把WifiHaLow-E972設定靜態IP: 192.168.100.21
+  + 將WifiHaLow-E972綁好IP後再設定port forwards
 
 ### 初次設定(第三層的WifiHaLow-E972+第四層RUT200)
 + 準備工具: 有Wifi功能的電腦或筆電進行設定。
