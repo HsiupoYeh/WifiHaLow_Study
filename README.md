@@ -26,6 +26,10 @@
 + 按鈕非常小，要用針戳。沒必要應該不會需要按他。
 + 長按10秒工廠重置。其他的秒數請參考說明書。
 
+### 軟體重置
++ /cgi-bin/luci/admin/system/flash
++ 在「System > Reset/FlashFirmware」頁面
+
 ### 初次設定(上網用的主機)
 + 參考資料: https://docs.heltec.org/en/wifi_halow/ht-h7608/index.html
 + 上電會亮紅燈，接著閃爍，然後變成黃或綠燈有出現的時候，表示已經開機完成。
