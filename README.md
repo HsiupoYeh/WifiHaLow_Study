@@ -8,3 +8,22 @@
 + 台灣地區免執照頻段: 922-928MHz、920-925MHz。
   + 註: 使用Lora協定的**Meshtastic**，在台灣預設是使用923.875MHz，目前有人推廣改用920.125MHz。
   + 註2: **HT-H7608 Wi-Fi HaLow 路由器** 使用的天線支援: 902~928 MHz。
+
+### 選擇硬體
++ 中國公司Heltec Automation設計的**HT-H7608 Wi-Fi HaLow 路由器**。
+  + 產品頁面：https://heltec.cashier.ecpay.com.tw/product/000000000781290
+  + 說明書: https://resource.heltec.cn/download/HT-H7608/HT-H7608_1.0.pdf
+  + 特色：MCU用MT7628。
+  + 優點：
+    + 便宜、台灣有官網可購買。
+    + 低功耗，可用USB TypeC供電，也有附5V/2A變壓器。實際使用平均功耗低於2W。資料傳輸時可能高至3.5W。
+    + 工業規格運作溫度: -40°C to 85°C 。
+    + 同時可以一起運作Wifi 2.4GHz。
+    + 高速傳輸: 150Kbps ~ 32Mbps 。
+  + 缺點：中國產品。
+ 
+### 重置按鈕
++ 按鈕非常小，要用針戳。沒必要應該不會需要按他。
++ 長按10秒工廠重置。其他的秒數請參考說明書。
+
+###
