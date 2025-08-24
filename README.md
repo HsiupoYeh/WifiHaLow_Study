@@ -157,7 +157,14 @@
     + Internal IP address: 10.42.0.22
     + Internal port: 80
     + 其他不用改
-   
+  + ESP32_MPPT_HTTP  (x.x.x.x:26200->10.42.0.22:26200)
+    + Name: ESP32_MPPT_HTTP
+    + Source zone: ahwlan
+    + External port: 26200
+    + Destination zone: lan
+    + Internal IP address: 10.42.0.22
+    + Internal port: 26200
+    + 其他不用改
       
 ### 第一層路由器設定(暫時用RUT200_C85E)
 + 只要可以上網、提供一個RJ45的LAN給第二層WifiHaLow路由。
