@@ -135,9 +135,9 @@
 + Port Forwards (Network > Firewall >Port Forwards)
   + RUT200_CADB_HTTP (x.x.x.x:26302->10.42.0.22:80)
     + Name: RUT200_CADB_HTTP
-    + Source zone: lan
-    + External port: 26301
-    + Destination zone: ahwlan
+    + Source zone: ahwlan
+    + External port: 26302
+    + Destination zone: lan
     + Internal IP address: 10.42.0.22
     + Internal port: 80
     + 其他不用改
