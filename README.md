@@ -133,12 +133,12 @@
   + 把RUT200_CADB設定靜態IP: 10.42.0.22 (這邊綁定不給改HostName，自己看一下MAC來知道是哪個裝置。MAC=20:97:27:1A:CA:DA)
   + 將RUT200_CADB綁好IP後再設定port forwards
 + Port Forwards (Network > Firewall >Port Forwards)
-  + E972_HTTP (x.x.x.x:26301->192.168.100.21:80)
-    + Name: E972_HTTP
+  + RUT200_CADB_HTTP (x.x.x.x:26302->10.42.0.22:80)
+    + Name: RUT200_CADB_HTTP
     + Source zone: lan
     + External port: 26301
     + Destination zone: ahwlan
-    + Internal IP address: 192.168.100.21
+    + Internal IP address: 10.42.0.22
     + Internal port: 80
     + 其他不用改
    
