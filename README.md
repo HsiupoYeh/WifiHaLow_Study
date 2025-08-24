@@ -37,6 +37,11 @@
 + 如果還沒完成設定，將進入設定模式，閃爍黃燈一次綠燈一次循環。此時可以用Wifi連入，或用LAN連入。
 + 這裡選擇用WIFI進行設定:
   + 若RJ45維持連線的情況下發生問題，請移除RJ45接線，並將裝置重開機。
-  + 使用筆電的WIFI尋找路由器的SSID: HT-H7608-XXXX
-+ 管理者帳戶: root
-+ 預設密碼: heltec.org
+  + 使用筆電的WIFI連接WifiHaLow路由器:
+    + SSID: HT-H7608-XXXX
+    + PASS: heltec.org
+  + 成功連線後應該會配發IP: 10.42.0.x
+  + 訪問WifiHaLow路由器設定網頁:
+    + http://10.42.0.1/
+    + 管理者帳戶: root
+    + 預設密碼: heltec.org
