@@ -74,6 +74,8 @@
   + 建議先從「Status > Overview」底下的「Active DHCP Leases」查看區域網路發佈IP位置與裝置清單來設定設備。
   + 把WifiHaLow-E972設定靜態IP: 192.168.100.21
   + 將WifiHaLow-E972綁好IP後再設定port forwards
+  + 把ESP32_TxRx(esp32-04DB14)設定靜態IP: 192.168.100.11
+  + 將ESP32_TxRx(esp32-04DB14)綁好IP後再設定port forwards
 + Port Forwards (Network > Firewall >Port Forwards)
   + E972_HTTP (x.x.x.x:26301->192.168.100.21:80)
     + Name: E972_HTTP
