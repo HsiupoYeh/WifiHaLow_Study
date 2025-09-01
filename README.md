@@ -101,7 +101,14 @@
     + Internal IP address: 192.168.100.21
     + Internal port: 26200
     + 其他不用改
-    
+  + ESP32_TxRx_HTTP  (x.x.x.x:26201->192.168.100.11:80)
+    + Name: ESP32_TxRx_HTTP
+    + Source zone: lan
+    + External port: 26201
+    + Destination zone: lan
+    + Internal IP address: 192.168.100.11
+    + Internal port: 80
+    + 其他不用改
 ### 初次設定(第三層的WifiHaLow-E972+第四層RUT200)
 + 準備工具: 有Wifi功能的電腦或筆電進行設定。
 + 參考資料: https://docs.heltec.org/en/wifi_halow/ht-h7608/index.html
